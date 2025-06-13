@@ -10,6 +10,11 @@
     "test": "vitest --no-watch",
     "prepare": "husky"
   },
+  "lint-staged": {
+    "*.{js, jsx,ts,tsx}": [
+        "eslint --fix"
+        ]
+    },
   "dependencies": {
     "next": "15.3.3",
     "react": "^19.0.0",
